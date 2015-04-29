@@ -15,6 +15,7 @@ public:
     virtual ~matrix();
     void size();
     void new_matrix();
+    void preencher_matrix();
     void show_matrix();
     matrix(int m, int n);
     int get_linha();

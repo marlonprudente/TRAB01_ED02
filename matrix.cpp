@@ -27,6 +27,10 @@ void matrix::new_matrix()
     }
 
 }
+void matrix::preencher_matrix()
+{
+    
+}
 void matrix::show_matrix()
 {
     for(int i = 0; i< m; i++)
