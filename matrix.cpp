@@ -12,19 +12,20 @@ using namespace std;
 matrix::matrix() {
 }
 matrix::matrix(int m, int n) 
-{/*
-    this m = m;
-    this n = n;
-    matrix = new int**[m];
-  for (int i=0; i<m; i++) {
-      matrix[i] = new int*[n];
-      for (int j=0; j<n; j++) {
-          matrix[i][j] = 0;
-       }
-  }
-    */
+{
+    this->m = m;
+    this->n = n;   
+    matrix::new_matrix();
 }
 
+void matrix::new_matrix() {
+    matriz = new int*[m];
+    for(int i = 0; i<m;i++)
+    {
+        matriz[i] = new int[n];        
+    }
+
+}
 void matrix::size()
 {
     cout << "Linha: " << m ;
