@@ -26,6 +26,8 @@ void divide_conquer();
 int main(int argc, char** argv) {
     
     cout << "Olá Mundo!";
+    matrix*  t = new matrix(3,3);
+    t->show_matrix();
 
     return 0;
 }

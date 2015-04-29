@@ -18,13 +18,25 @@ matrix::matrix(int m, int n)
     matrix::new_matrix();
 }
 
-void matrix::new_matrix() {
+void matrix::new_matrix() 
+{
     matriz = new int*[m];
     for(int i = 0; i<m;i++)
     {
         matriz[i] = new int[n];        
     }
 
+}
+void matrix::show_matrix()
+{
+    for(int i = 0; i< m; i++)
+    {
+        for(int j = 0; j< n; j++)
+        {
+            cout << matriz[i][j];
+        }
+        cout << "\n";
+    }
 }
 void matrix::size()
 {
