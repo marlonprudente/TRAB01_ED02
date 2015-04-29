@@ -6,11 +6,13 @@
  */
 
 #include "matrix.h"
+#include <iostream>
 using namespace std;
 
 matrix::matrix() {
 }
-matrix::matrix(int m, int n) {
+matrix::matrix(int m, int n) 
+{/*
     this m = m;
     this n = n;
     matrix = new int**[m];
@@ -20,19 +22,19 @@ matrix::matrix(int m, int n) {
           matrix[i][j] = 0;
        }
   }
-    
+    */
 }
 
-matrix::size()
+void matrix::size()
 {
     cout << "Linha: " << m ;
     cout << "Coluna: " << n;
 }
-matrix::get_linha()
+int matrix::get_linha()
 {
     return m;
 }
-matrix::get_coluna()
+int matrix::get_coluna()
 {
     return n;
 }

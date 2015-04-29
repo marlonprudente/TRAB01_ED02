@@ -13,7 +13,7 @@ public:
     matrix();
     matrix(const matrix& orig);
     virtual ~matrix();
-    size();
+    void size();
     matrix(int m, int n);
     int get_linha();
     int get_coluna();

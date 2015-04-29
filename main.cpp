@@ -7,6 +7,8 @@
  */
 
 #include <cstdlib>
+#include <iostream>
+#include "matrix.h"
 
 using namespace std;
 
@@ -14,14 +16,16 @@ using namespace std;
  * Multiplicação de Matrizes por força bruta e por divisão e conquista.
  */
 
-void forca_bruta(int** m, int** n)
+void forca_bruta(matrix m, matrix n)
 {
-    int r[][];
+   // matrix* r = new matrix(m.get_linha(),n.get_coluna());
     
 };
 void divide_conquer();
 
 int main(int argc, char** argv) {
+    
+    cout << "Olá Mundo!";
 
     return 0;
 }
