@@ -27,7 +27,8 @@ int main(int argc, char** argv) {
     
    // cout << "Olá Mundo!";
     matrix  t = matrix(3,3);
-    t.show_matrix();
+    t.set_matrix();
+    t.get_matrix();
 
     return 0;
 }

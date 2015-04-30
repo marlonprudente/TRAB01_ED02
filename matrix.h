@@ -15,8 +15,10 @@ public:
     virtual ~matrix();
     void size();
     void new_matrix();
-    void preencher_matrix();
-    void show_matrix();
+    void set_matrix();
+    int get_item(int m, int n);
+    void set_item(int m, int n, int item);
+    void get_matrix();
     matrix(int m, int n);
     int get_linha();
     int get_coluna();

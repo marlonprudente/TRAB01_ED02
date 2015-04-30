@@ -7,6 +7,7 @@
 
 #include "matrix.h"
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 matrix::matrix() {
@@ -27,17 +28,45 @@ void matrix::new_matrix()
     }
 
 }
-void matrix::preencher_matrix()
+void matrix::set_matrix()
 {
+    int op;
+    cout << "1 - Manual - 2 - Automatic\n";
+    cin >> op;
+    switch (op)
+    {
+        case 1:
+            for (int i=0;i<m;i++)
+            {
+                for (int j=0;j<n;j++)
+                {
+                    cin >> matriz[i][j];
+                }
+            }
+            break;
+        case 2:
+            for (int i=0;i<m;i++)
+            {
+                for (int j=0;j<n;j++)
+                {
+                   matriz[i][j] = rand()%10;
+                }
+              
+            }
+            break;
+        default:
+            cout << "Unavailable";
+            break;
+    }
     
 }
-void matrix::show_matrix()
+void matrix::get_matrix()
 {
     for(int i = 0; i< m; i++)
     {
         for(int j = 0; j< n; j++)
         {
-            cout << matriz[i][j];
+            cout << matriz[i][j] << " ";
         }
         cout << "\n";
     }
@@ -55,7 +84,14 @@ int matrix::get_coluna()
 {
     return n;
 }
-
+int matrix::get_item(int m, int n)
+{
+    return matriz[m][n];
+}
+void matrix::set_item(int m, int n, int item)
+{
+    matriz[m][n] = item;
+}
 matrix::matrix(const matrix& orig) {
 }
 
