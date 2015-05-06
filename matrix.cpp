@@ -86,7 +86,9 @@ int matrix::get_coluna()
 }
 int matrix::get_item(int m, int n)
 {
-    return matriz[m][n];
+    int resp;
+    resp = matriz[m][n];
+    return resp;
 }
 void matrix::set_item(int m, int n, int item)
 {
