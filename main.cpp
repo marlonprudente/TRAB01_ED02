@@ -27,12 +27,15 @@ void forca_bruta(matrix m, matrix n)
         for(int nj = 0; nj < n.get_coluna(); nj++)
         {
          somaprod = 0;
-         for(int i=0; i<m.get_linha(); i++) 
+         for(int i=0; i<m.get_linha(); i++)
+         {
+            cout << "MI = " << mi << ", NJ = " << nj;
             somaprod += m.get_item(mi,i) * n.get_item(i,nj); 
             r.set_item(mi,nj,somaprod);       
         }
     }
     r.get_matrix();
+}
 };
 void divide_conquer();
 
@@ -42,7 +45,7 @@ int main(int argc, char** argv) {
     matrix  m = matrix(3,3), n = matrix(3,3);    
     m.set_matrix();
     n.set_matrix();
-    //cout << "Item na posicao 3x3: " << m.get_item(3,3);
+    //cout << "Item na posicao 3x3: " << m.get_item(2,2);
     forca_bruta(m,n);
     //t.get_matrix();
 
